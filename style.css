@@ -1,0 +1,91 @@
+/* Định dạng chung cho toàn bộ trang */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header - Thanh điều hướng */
+header {
+    background: #007bff;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Danh sách dịch vụ */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #007bff;
+    color: white;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Form liên hệ */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Bài viết blog */
+article {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
