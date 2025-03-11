@@ -3,25 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Shop Thời Trang Cao Cấp</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .banner {
+            background: url('https://source.unsplash.com/1600x600/?fashion') no-repeat center/cover;
+            text-align: center;
+            padding: 50px 20px;
+            color: white;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background: #ff4081;
+        }
+        .products, .blog {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .product-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .product {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .blog article {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Bài viết mới nhất</h1>
+        <div class="banner">
+            <h1>Chào mừng đến với Shop Thời Trang Cao Cấp</h1>
+            <p>Khám phá những bộ sưu tập mới nhất</p>
+        </div>
         <nav>
             <a href="index.html">Trang chủ</a>
             <a href="about.html">Giới thiệu</a>
-            <a href="services.html">Dịch vụ</a>
+            <a href="products.html">Sản phẩm</a>
             <a href="contact.html">Liên hệ</a>
             <a href="blog.html">Blog</a>
         </nav>
     </header>
     <main>
-        <article>
-            <h2>Bài viết số 1</h2>
-            <p>Nội dung bài viết đang cập nhật...</p>
-        </article>
+        <section class="products">
+            <h2>Sản phẩm nổi bật</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="https://product.hstatic.net/200000000133/product/24acoe003n_-_24acve065n_233859cf2b8648d5b5ee3c188d9ba82e_large.jpg" alt="Áo khoát thời trang">
+                    <h3>Áo khoát thời trang</h3>
+                    <p>Giá: 250.000 VND</p>
+                </div>
+                <div class="product">
+                    <img src="https://product.hstatic.net/200000000133/product/24aqae034n_-_24aqqe034n.3_b1c2d6dc19984f76aa2d1ac5d1aa9df5_large.jpg" alt="Quần vest nữ">
+                    <h3>Quần vest nữ</h3>
+                    <p>Giá: 450.000 VND</p>
+                </div>
+                <div class="product">
+                    <img src="https://product.hstatic.net/200000000133/product/24able028f_-_24aqse004d.1_10ed3098ab034eb5990d9c46bba0a209_large.jpg" alt="Blazer">
+                    <h3>Blazer</h3>
+                    <p>Giá: 650.000 VND</p>
+                </div>
+            </div>
+        </section>
+        <section class="blog">
+            <h2>Bài viết mới nhất</h2>
+            <article>
+                <h3>Xu hướng thời trang năm 2025</h3>
+                <p>Khám phá những phong cách mới nhất giúp bạn luôn nổi bật...</p>
+                <a href="#" style="color: #ff4081; font-weight: bold;">Đọc thêm</a>
+            </article>
+        </section>
     </main>
+    <footer>
+        <p>&copy; 2025 Shop Thời Trang Cao Cấp - Tất cả quyền được bảo lưu.</p>
+    </footer>
 </body>
 </html>
